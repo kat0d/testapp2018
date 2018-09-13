@@ -1,0 +1,84 @@
+@keyframes oldtv-anim {
+	0% {clip: rect(0.5em, 100vw, 0.4em, 0);}
+	20% {clip: rect(1.8em, 100vw, 2em, 0);}
+	40% {clip: rect(0.1em, 100vw, 0.3em, 0);}
+	60% {clip: rect(0, 100vw, 0, 0);}
+	80% {clip: rect(1em, 100vw, 1.5em, 0);}
+	100% {clip: rect(0.7em, 100vw, 1em, 0);}
+}
+@keyframes oldtv-anim1 {
+	0% {clip: rect(0.1em, 100vw, 0.3em, 0);}
+	20% {clip: rect(0.8em, 100vw, 0.1em, 0);}
+	40% {clip: rect(0, 100vw, 0, 0);}
+	60% {clip: rect(0.1em, 100vw, 0.4em, 0);}
+	80% {clip: rect(1em, 100vw, 1.5em, 0);}
+	100% {clip: rect(1.8em, 100vw, 2em, 0);}
+}
+
+.oldtv {
+	position: relative;
+}
+.oldtv:before,
+.oldtv:after {
+	content: attr(data-tv);
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	clip: rect(0, 0, 0, 0);
+}
+.vis.oldtv:before,
+#header:hover .oldtv:before{
+	left: 0.06em;
+	animation: oldtv-anim 3s infinite cubic-bezier(1,0,0,1) alternate-reverse;
+	/*text-shadow: 4px 7px 5px #16dd16;*/
+	/*color: #0e870e;*/
+}
+.vis.oldtv:after,
+#header:hover .oldtv:after{
+	left: -0.06em;
+	animation: oldtv-anim1 5s infinite cubic-bezier(.68,-0.55,.27,1.55) alternate-reverse;
+	/*text-shadow: -3px -5px 2px #1b5a1b;*/
+	/*color: #46ad0b;*/
+}
+
+
+@keyframes blink{
+	50% { opacity: 0; }
+}
+
+@keyframes spin {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+
+.pogoda:hover .i_cog:before {
+	animation: spin 2s infinite linear;
+}
+.pogoda:hover .i_cog:hover:before{
+	animation: none;
+}
+
+@keyframes skew{
+	0%{
+		transform: skewX(0deg);
+		transform-origin: 100% 100%;
+	}
+	33%{
+		transform: skewX(80deg);
+		transform-origin: 50% 50%;
+	}
+	66%{
+		transform: skewX(-80deg);
+	}
+}
+
+#logo:hover {
+	animation: skew .25s linear;
+}
+
+

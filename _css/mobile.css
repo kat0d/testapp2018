@@ -1,0 +1,259 @@
+/***************************************** потом оставить/перенести или удалить*/
+/***************************************** это чтобы под мобайл отлаживать удобнее было*/
+
+/*
+.touchevents #fw main>section{
+overflow: hidden;
+}
+*/
+
+/***************************************** потом оставить/перенести или удалить END */
+/***************************************** это чтобы под мобайл отлаживать удобнее было END */
+
+
+/********************************** @media (min-width:1350px) */
+@media (min-width:1350px) {
+	.category.trans_header .side_logo{
+		position: absolute;
+		left: 1em;
+		width: 10%;
+		top: 3em;
+	}
+	.category.trans_header .side_logo img{
+		max-height: 150px;
+	}
+}
+/********************************** @media (min-width:1350px) */
+
+
+/********************************** @media (max-width:1280px) */
+@media (max-width:1280px) {
+
+	html.touchevents{
+		font-size: 110%;
+		-webkit-text-size-adjust: 110%;
+		-ms-text-size-adjust: 110%;
+	}
+	main{
+		line-height: 1.5em;
+	}
+	#side_a{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 1 0 100%;
+		order: 3;
+	}
+
+	#side_a .sticky{
+		position: unset;
+	}
+	.hdr-not-top.hdr-pinned #side_a .sticky {
+		top: unset;
+	}
+	.side_logo img{
+		min-width: 150px;
+	}
+
+}
+/********************************** @media (max-width:1280px) /z*/
+
+
+/********************************** @media (max-width:1024px) */
+@media (max-width:1024px) {
+
+	main{
+		line-height: 1.4em;
+		flex: 1 0 100%;
+	}
+	#side_b{
+		flex: 1 0 40%;
+		order: 3;
+	}
+	#side_a {
+		flex: 1 0 40%;
+		order: 2;
+	}
+
+	#side_b .sticky{
+		position: unset;
+	}
+	.hdr-not-top.hdr-pinned aside .sticky {
+		top: unset;
+	}
+
+	/*--------------------------------------------- Мобильное Меню */
+	#z3_mobmenu {
+		display: flex;
+		align-items: center;
+		font-size: 1.7em;
+		cursor: pointer;
+		transition: all 0.2s;
+	}
+	#z3_menu{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		min-height: 100vh;
+		transform: translateX(100%);
+		transition: all 0.2s;
+	}
+	#z3_menu li,
+	#z3_menu > ul > li{
+		display: block;
+		width: 100%;
+		border: none;
+	}
+	#z3_menu a{
+		display: inline-block;
+		border-bottom: 1px solid #666;
+		border-left: 1px solid #666;
+	}
+	#header #z3_menu > ul{
+		display: inline-block;
+		height: auto;
+		font-size: 2em;
+		margin: 2em 1.5em 3em;
+		text-align: left;
+	}
+	#z3_menu .hide_ul,
+	#z3_menu .hide_ul > .deep > .hide_ul,
+	#z3_menu > ul > .deep > ul{
+		opacity: 1;
+		position: unset;
+		visibility: visible;
+		font-size: 0.9em;
+		transform: unset;
+		box-shadow: none;
+		background: no-repeat;
+		margin-left: 1em;
+	}
+	#z3_menu .hide_ul > li{
+		border: none;
+	}
+	/*--------------------------------------------- Мобильное Меню ЕНД*/
+
+}
+/********************************** @media (max-width:1024px) /z*/
+
+
+
+/********************************** @media (max-width:850px) */
+@media (max-width:850px) {
+
+
+}
+/********************************** @media (max-width:850px) /z*/
+
+
+@media (max-width:700px){
+
+	main{
+		font-size: 0.95rem;
+		line-height: 1.4em;
+	}
+	.category.trans_header.hdr-top .search_input[type="search"]{
+		background: #f7f7f7;
+	}
+	.search_input[type="search"]{
+		background: #454545;
+	}
+
+}
+/********************************** @media (max-width:700px) and (orientation:portrait)
+tablets - vertical */
+@media (max-width:700px) and (orientation:portrait) {
+	main{
+		font-size: 1.1rem;
+	}
+}
+/********************************** @media (max-width:700px) and (orientation:portrait)
+tablets - vertical /z*/
+
+/********************************** @media (max-width:700px) and (orientation:landscape)
+phones - horizontal */
+@media (max-width:700px) and (orientation:landscape) {
+
+	#header #z3_menu > ul {
+		margin: 2em 1.5em 3em;
+	}
+
+}
+/********************************** @media (max-width:700px) and (orientation:landscape)
+phones - horizontal /z*/
+
+
+/********************************** @media (max-width:450px) phones */
+@media (max-width:450px) {
+
+	#t131 > main{
+		padding: 0 0.5rem;
+	}
+	main{
+		font-size: 0.95rem;
+		line-height: 1.4em;
+	}
+	#fullscreen-mode{
+		display: none;
+	}
+
+	/*--------------------------------------------- Mobile Menu */
+	#z3_menu{
+		left: 0;
+		text-align: center;
+	}
+	#header #z3_menu > ul{
+		text-align: left;
+		margin: 2em 0.5em;
+	}
+	#logo > .logo_text{
+		display: none;
+	}
+	#logo:after{
+		content: 'НОВОСТИ';
+		font-size: 0.65em;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		padding: 0.075em 0 0 0.5em;
+	}
+	/*--------------------------------------------- Mobile Menu /z*/
+	.touchevents #mail_container {
+		width: 99%;
+	}
+	.pag_num,
+	.pag_active{
+		font-size: 0.85em;
+	}
+}
+/********************************** @media (max-width:450px) phones /z*/
+
+
+/********************************** @media (max-width:360px) */
+@media (max-width:360px) {
+
+}
+/********************************** @media (max-width:360px) /z*/
+
+/********************************** @media (max-width:330px) */
+@media (max-width:330px) {
+	html.touchevents{
+		font-size: 100%;
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+	}
+	main{
+		line-height: 1.3em;
+	}
+}
+/********************************** @media (max-width:330px) /z*/
+
+/* непонятно, на монике при увеличенном масштабе dpi почти так же как и на планшете в 1280px*/
+/*
+@media (min-resolution: 116dpi){
+body{
+display: none;
+}
+}
+*/

@@ -1,0 +1,151 @@
+/*normalize.css*/
+.btn,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+	border: 1px solid;
+	color: #1F6AB9;
+	background: transparent;
+	box-shadow: 0 0 0.5em inset;
+}
+.btn:hover,
+.btn:focus,
+button:hover,
+button:focus{
+	color: #005BBB;
+	background: transparent;
+	box-shadow: 0 0 0.2em inset;
+}
+blockquote{
+	border-left: 3px solid;
+	color: #999;
+}
+a,
+#z3_menu .active>a,
+#z3_menu .active_alias>a,
+.readmore>a,
+.blue {
+	color: #1F6AB9;
+}
+a:hover{
+	color: #005BBB;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+textarea,
+.search_input[type="search"],
+.hdr-top .category.trans_header .search_input[type="search"]{
+	/*background: #202020;*/
+	color: #eee;
+}
+select{
+	color: #ccc;
+	background-color: #202020;
+	border: none;
+}
+/*normalize.css /z*/
+.dsgn{
+	background: #ccc;
+}
+body,
+#side_a,
+#side_b{
+	color: #ccc;
+	background: #2b2b2b;
+}
+.touchevents body{
+	color: #d9d9d9;
+}
+main{
+	background: #343434;
+}
+#header,
+#footer{
+	background: #202020;
+}
+#z3_modal{
+	background: rgba(0, 0, 0, 0.95);
+}
+#z3_modal>div{
+	background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.hdr-pinned.hdr-not-top #header,
+.desktop.hdr-not-top.hdr-pinned .trans_header #header{
+	background: #202020;
+}
+.hdr-top .category.trans_header #z3_menu > ul > li > a,
+.hdr-top .category.trans_header .search_input[type="search"]{
+	color: #eee;
+}
+
+
+.black_tag{
+	color: #d5d5d5;
+}
+.news_link{
+	background: #2b2b2b;
+}
+.white{
+	color: #2b2b2b;
+}
+.green,
+.voting_stars:hover .vote_star,
+.voting_stars .vote_star:hover{
+	color: #080;
+}
+#response-text{
+	background: #343434;
+}
+.blog .item hr,
+.tag_item hr{
+	color: #555;
+	border-color: #555;
+}
+.blog h2>a:visited,
+.tag_list h2>a:visited{
+	color: #ccc;
+}
+.cat_info{
+	color: #ccc;
+}
+.tagspopular a,
+.blog_tags a{
+	background: transparent;
+	color: #1F6AB9;
+	border: 1px solid;
+}
+.blog.only_links h2 > a,
+.tag_list.only_links h2 > a,
+.rss_items h2 > a{
+	color: #c9c9c9;
+}
+.blog_cutom_img:after{
+	background: rgba(0, 0, 0, 0.75);
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7));
+}
+.all_cats .active>a,
+.newsflash h3{
+	color: #c9c9c9;
+}
+.rss_items .time,
+.rss_items .tag{
+	color:#999;
+}
+/*syles.css*/
+
+/*syles.css /z*/
+
+@media (max-width:700px){
+
+	.search_input[type="search"],
+	.hdr-top .category.trans_header .search_input[type="search"]{
+		background: #202020;
+	}
+
+}

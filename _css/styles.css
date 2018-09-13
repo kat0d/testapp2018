@@ -1,0 +1,109 @@
+/* useful stuff */
+.m1-0{
+	margin: 1em 0
+}
+.m0_5{
+	margin: 0.5em
+}
+.m0_3{
+	margin: 0.3em
+}
+.p0_3{
+	padding: 0.3em
+}
+.p0_5{
+	padding: 0.5em
+}
+/* useful stuff /z*/
+
+/*video news from youtube */
+#yt-news{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0.25em 0;
+}
+#yt-news>div{
+	display: inline-block;
+	margin: 0.25em;
+	background: #000;
+}
+#yt-news figure{
+	position: relative;
+	cursor: pointer;
+}
+#yt-news figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.75);
+	color: #ddd;
+	font-size: 0.7em;
+	line-height: 1.4em;
+}
+#yt-news iframe,
+#yt-news img{
+	display: block;
+	max-width: 100%
+}
+/*video news from youtube /z*/
+
+/* http://khersonskie-novosti.chatovod.ru/ */
+body.chat main{
+	padding: 0;
+}
+body.chat #iframe{
+	height: auto;
+	min-height: 95vh;
+}
+/* http://khersonskie-novosti.chatovod.ru/ /z*/
+
+.pogoda{
+	position: relative;
+	display: inline-flex;
+	/*background: #3367d6;*/
+	color: #f7f7f7;
+	margin: 1em;
+}
+#pogoda{
+	padding: 0.5em;
+	z-index: 1;
+}
+#pogoda:hover,
+.pogoda .i_cog:hover{
+	transform: unset;
+}
+.pogoda .i_cog{
+	padding:0.5em;
+}
+.no-touchevents .pogoda .i_cog{
+	position: absolute;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateX(0%);
+}
+
+.no-touchevents .pogoda:hover .i_cog{
+	visibility: visible;
+	opacity: 1;
+	transform: translateX(100%);
+}
+
+ul.pogoda_mesta{
+	display: inline-block;
+	list-style: none;
+	text-align: left;
+	padding: 0 5%;
+}
+ul.pogoda_mesta>li{
+	font-size: 1.2em;
+	margin: 0.25em 0;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+ul.pogoda_mesta>li:hover{
+	color: #3367d6;
+}

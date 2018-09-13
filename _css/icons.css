@@ -1,0 +1,156 @@
+/*
+@font-face {
+	font-family: icons;
+	src: url("/_fonts/icons.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal
+}
+*/
+*[class*="i_"]:before {
+	display: inline-block;
+	font-family: icons;
+	font-style: normal;
+	line-height: 1em;
+	padding: 0 0.1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*чтобы в юникод - &#xf000  */
+.i_fullwith:before{content: '\f003' }
+.i_nofullwith:before{content: '\f002' }
+.i_mail:before{content: '\f001' }
+.i_abort:before{content: '\f000' }
+.i_ar_left:before{content: '\e004' }
+.i_ar_right:before{content: '\e005' }
+.i_ar_up:before{content: '\e006' }
+.i_ar_down:before{content: '\e007' }
+.i_chev_left:before{content: '\e008' }
+.i_chev_right:before{content: '\e009' }
+.i_chev_up:before{content: '\e00a' }
+.i_chev_down:before{content: '\e00b' }
+.i_menu:before{content: '\e00c' }
+.i_pencil:before{content: '\e00d' }
+.i_star:before{content: '\e00e' }
+
+.i_user:before{content: '\e011' }
+.i_clock:before{content: '\e018' }
+.i_globe:before{content: '\e019' }
+.i_globe1:before{content: '\e01a' }
+.i_globe_half:before{content: '\e01b' }
+.i_eye:before{content: '\e01d' }
+.i_thumb_up:before{content: '\e01e' }
+.i_thumb_down:before{content: '\e01f' }
+
+
+.i_uho:before{content: '\e024'; }
+.i_viber:before{content: '\e02a'; color: #665cac; padding: 0; }
+.i_skype:before{content: '\e02b'; color: #00b1f3; padding: 0; }
+.i_telegram:before{content: '\e02c'; color: #1c93d2; padding: 0; }
+.i_penrose:before{content: '\e02e' }
+.i_penrose1:before{content: '\e02f' }
+.i_phone_out:before{content: '\e027' }
+
+.i_penrose2:before{content: '\e030' }
+.i_loupe:before{content: '\e032' }
+.i_idea:before{content: '\e034' }
+.i_template:before{content: '\e034' }
+.i_text:before{content: '\e036' }
+.i_wireframe:before{content: '\e038' }
+.i_webdev:before{content: '\e03a' }
+.i_check:before{content: '\e03b' }
+.i_handshake:before{content: '\e03c' }
+
+
+.i_cog:before{content: '\e042' }
+.i_triangle_r:before{content: '\e049' }
+
+
+
+
+.i_brw_globe:before{content: '\e050'}
+.i_brw_chart:before{content: '\e051'}
+.i_brw_lock:before{content: '\e052'}
+.i_brw_timer:before{content: '\e053'}
+.i_brw_shield:before{content: '\e054'}
+.i_brw_cog:before{content: '\e055'}
+.i_brw_grow:before{content: '\e056'}
+.i_brw_binary:before{content: '\e057'}
+.i_brw_text:before{content: '\e058'}
+.i_brw_code:before{content: '\e059'}
+.i_brw_diamond:before{content: '\e05a'}
+.i_brw_users:before{content: '\e05b'}
+.i_brw_design:before{content: '\e05c'}
+.i_brw_smm:before{content: '\e05d'}
+.i_brw_cog2:before{content: '\e05e'}
+.i_brw_globe2:before{content: '\e05f'}
+
+.i_brw_code2:before{content: '\e060'}
+.i_brw_design2:before{content: '\e061'}
+.i_brw_shield2:before{content: '\e062'}
+.i_brw_search:before{content: '\e063'}
+.i_brw_eye:before{content: '\e064'}
+.i_brw_site:before{content: '\e065'}
+.i_brw_chain:before{content: '\e066'}
+.i_cal_edit:before{content: '\e067'}
+.i_cal_publish:before{content: '\e068'}
+
+.i_maintanence:before{content: '\e071'}
+.i_handprint:before{content: '\e072'}
+.i_handoffer_left:before{content: '\e073'}
+.i_handoffer_right:before{content: '\e074'}
+.i_big_folder:before{content: '\e075'}
+.i_open_folder:before{content: '\e076'}
+.i_open_folder1:before{content: '\e077'}
+.i_blg_dsg:before{content: '\e078'}
+.i_blg_dsg1:before{content: '\e079'}
+.i_blg_dsg2:before{content: '\e07a'}
+
+
+.i_code:before{content: '\e084'}
+.i_keyboard:before{content: '\e085'}
+.i_rocket:before{content: '\e086'}
+.i_bin_loupe:before{content: '\e087'}
+.i_spin_cog:before{content: '\e088'}
+.i_speedo:before{content: '\e089'}
+.i_instr:before{content: '\e08a'}
+.i_shield:before{content: '\e08b'}
+
+.i_troll_dad_monocle:before{content: '\e0aa'}
+
+
+
+.i_3d_growing:before{content: '\e097';font-size: 1.2em}
+
+
+/***************************************************************** SVG ***/
+
+.i-penrose{
+	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xOCAwIDEwMCAxMDAiPjxwYXRoIGQ9Ik0yNS45MTMgMzIuNzk3bDE2LjczNiAyOS4xOTVoMTIuMjM0TDI1LjY3NiAxMi43NTNsLTM2Ljc5IDYzLjU2MSA1LjkzOSAxMS4xMzZ6Ii8+PHBhdGggZD0iTTMxLjM2NyA0My42MzJsLTUuNDU2LTkuMzc1TC00LjYzMSA4Ny40NWg3My45MzRsNS44MTEtMTEuODI2LTYxLjg4Mi4wNjN6Ii8+PHBhdGggZD0iTTIxLjQ0OCA2Mi43MTNsLTcuMDM1IDEyLjQ3OWg2MC43MDFMMzguMzA4IDEyLjYwN0gyNi42NzJsMjkuNjgzIDUwLjEwNnoiLz48L3N2Zz4=') center no-repeat;
+}
+
+/***************************************************************** SVG END ***/
+/***************************************************************** custom shapes  ***/
+.romb {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 1.7em;
+	height: 1.7em;
+	background: rgba(0, 0, 0, 0.8);
+	font-size: 4em;
+	transform: rotate(45deg);
+}
+.romb:before {
+	transform: rotate(-45deg);
+}
+
+/***************************************************************** custom shapes /z***/
+
+
+
+/************** Firefox Hack only *************************/
+@-moz-document url-prefix() {
+
+}
+/************** Firefox Hack only ************************ /z*/

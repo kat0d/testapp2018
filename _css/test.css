@@ -1,0 +1,21 @@
+button[disabled]{
+	background: #636770 !important;
+	color: #636770 !important;
+}
+
+#send-gift{
+	position: fixed;
+	display: inline-block;
+	left: 0;
+	right: 0;
+	top: 0;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #444;
+	padding: 1em;
+	z-index: 9;
+}
+
+#send-gift label{
+	display: block;
+}

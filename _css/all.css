@@ -1,0 +1,19 @@
+@import url("normalize.css");
+@import url("main.css");
+@import url("blog.css");
+@import url("styles.css");
+@import url("icons.css");
+@import url("mobile.css");
+@import url("animation.css");
+@import url("tooltipster.bundle.css");
+
+/*
+// in head of template
+	<link rel="stylesheet" href="/_css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="/_css/main.css" type="text/css">
+	<link rel="stylesheet" href="/_css/blog.css" type="text/css">
+	<link rel="stylesheet" href="/_css/styles.css" type="text/css">
+	<link rel="stylesheet" href="/_css/icons.css" type="text/css">
+	<link rel="stylesheet" href="/_css/mobile.css" type="text/css">
+	<link rel="stylesheet" href="/_css/animation.css" type="text/css">
+*/

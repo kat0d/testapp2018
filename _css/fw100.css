@@ -1,0 +1,362 @@
+/*************************************************** #fw */
+#fw main{
+
+}
+#fw main>section{
+	min-height: 100vh;
+	padding: 10vh 0;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+#fw main a{
+	/*color: #28b028;*/
+
+}
+#fw main div a:hover{
+	transform: scale(1.01,1.01);
+}
+.center_block>h2>a,
+h2.center_block>a{
+	color: #fff;
+}
+.center_block>h2>a:hover,
+h2.center_block>a:hover{
+	color: #005BBB;
+}
+/*************************************************** #fw END*/
+
+
+/*********************************************** плавный изогнутый переход секций */
+
+.trans{
+	position: relative;
+	height: 30vh;
+	margin: 0 0 -7.5vh;
+}
+
+.touchevents .trans{
+	display: none;
+}
+
+.trans>div{
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 50%;
+}
+.trans>.bl1{
+	left: 50%;
+}
+.trans>.bl1,
+.trans>.bl1-1{
+	top:0;
+}
+.trans>.bl2{
+	right: 50%;
+}
+.trans>.bl2,
+.trans>.bl2-1{
+	bottom: 7.5vh;
+}
+.trans>.bl1-1{
+	border-radius: 0 0 100% 0;
+}
+.trans>.bl2-1{
+	border-radius: 100% 0 0 0;
+}
+/*********************************************** плавный изогнутый переход секций END*/
+
+/********************* функциональные блоки */
+.icon-text{
+	font-size: 0.9em
+}
+.icon-text>div{
+	flex: 1 0;
+	min-width: 500px;
+	align-self: center;
+	font-size: 1.4em;
+	margin: 15vh 2%;
+}
+.icon-text i{
+	font-size: 10em;
+	display: block;
+	text-align: center;
+	height: 1em;
+	position: relative;
+	color: #000;
+	text-shadow: 0 0 0.1em #fff;
+	opacity: 0.7;
+}
+.icon-text i:before{
+	right: 0;
+	left: 0;
+}
+.icon-text h3{
+	padding: 0;
+	text-shadow: 0 0 0.1em #000;
+}
+.icon-text p{
+	text-shadow: 0 0 0.1em #000;
+	background: rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	transition: all 0.5s;
+}
+.icon-text .vis>p{
+	animation: skew 0.35s linear;
+	opacity: 1;
+}
+
+section>.romb {
+	position: absolute;
+	top: 1em;
+	box-shadow: 0.05em 0.05em 0.2em #fff;
+}
+
+/********************* функциональные блоки END */
+
+
+/************************************************** Услуги */
+#internet .block_3>div{
+	position: relative;
+	margin: 1em 0 0;
+	white-space: nowrap;
+}
+#internet .block_3>div:before{
+	font-size: 2.5em;
+	position: absolute;
+	top: -0.5em;
+	right: 0;
+	color: rgba(255, 0, 0, 0.4);
+}
+#internet .block_3>.i_3d_growing:before{
+	font-size: 3em;
+}
+.romb.i_webdev:before{
+	color: rgba(255, 0, 0, 0.4);
+}
+.romb.i_maintanence:before{
+	color: rgba(255, 255, 255, 0.9);
+}
+
+/*
+.jway .romb{
+box-shadow: none;
+}
+.jway.jvis .romb{
+box-shadow: 0.05em 0.05em 0.2em #fff;
+}
+*/
+/*
+#web-razrabotka.i_webdev:before{
+content: '\e03a';
+position: absolute;
+top: 0.3em;
+font-size: 3.5em;
+background: rgba(0, 0, 0, 0.75);
+border-radius: 50%;
+padding: 0.35em;
+box-shadow: 0 0.05em 0.2em #fff;
+}
+*/
+/************************************************** Услуги /z*/
+
+/************************************************** Разработка */
+
+#web-razrabotka h3{
+	position: relative;
+	overflow: hidden;
+	/*border-bottom: 0.1em solid #005BBB;*/
+	/*border-top: 0.1em solid #005BBB;*/
+}
+#web-razrabotka h3:before,
+#web-razrabotka h3:after{
+	content: '';
+	position: absolute;
+	height: 0.1em;
+	background-color: #005BBB;
+	width: 100%;
+	display: block;
+	transition: transform 3.5s;
+}
+#web-razrabotka h3:before{
+	top:0;
+	transform: translateX(-100%);
+}
+#web-razrabotka h3:after{
+	bottom: 0;
+	transform: translateX(100%);
+}
+#web-razrabotka h3.jvis:before,
+#web-razrabotka h3.jvis:after{
+	transform: translateX(0);
+}
+#web-razrabotka h3>a{
+	color: #fff;
+}
+/*
+#web-razrabotka h3>a:before{
+content: '\e03a';
+font-size: 1.6em;
+line-height: 0.9;
+color: #005BBB;
+text-shadow: 0 0 0.1em #fff, 0 0 0.3em #005BBB;
+transition: all 0.2s;
+}
+*/
+/*
+#web-razrabotka h3>a:before{
+content: '\e03a';
+position: absolute;
+top:0;
+font-size: 4em;
+}
+#web-razrabotka h3:hover>a:before{
+transform: scale(1.2);
+}
+*/
+.webdev-s3{
+	padding: 10vh 0;
+}
+.webdev_logos>div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.webdev_logos svg{
+	margin: 0.5em;
+	transition: transform 0.3s;
+}
+.webdev_logos svg:hover{
+	transform: scale(1.3);
+}
+/************************************************** Разработка END*/
+
+/************************************************** Поддержка */
+#podderzhka h1,
+#maintenance h1{
+	background: rgba(0, 0, 0, 0.7);
+}
+/*
+#podderzhka .oldtv:after,
+#podderzhka .oldtv:before{
+	text-shadow: 0 0 0.05em #fff;
+}
+*/
+/************************************************** Поддержка END*/
+
+
+
+
+/**************************************************** мобильные стили на лендингах */
+/**************************************************** мобильные стили на лендингах */
+/**************************************************** мобильные стили на лендингах */
+
+/********************************** @media (max-width:1280px)
+планшет 10 дюймов горизонтально
+*/
+@media (max-width:1280px) {
+
+	.center_block{
+		margin: 1vh 5%;
+	}
+	section>.romb {
+		font-size: 3.5em;
+	}
+	.icon-text {
+		font-size: 0.8em;
+	}
+	.icon-text > div{
+		margin: 5vh 2%;
+	}
+	.icon-text i{
+		font-size: 8em;
+	}
+
+}
+/********************************** @media (max-width:1280px) /z*/
+
+
+/********************************** @media (max-width:1024px)
+планшет 5 дюймов горизонтально
+*/
+@media (max-width:1024px) {
+
+	.icon-text:nth-child(odd) > div {
+		order: 0;
+	}
+	.icon-text:nth-child(odd) > div.way {
+		order: 1;
+	}
+	.icon-text i:before{
+		text-shadow: none !important
+	}
+
+}
+/********************************** @media (max-width:1024px) /z*/
+
+/********************************** @media (max-width:969px)
+планшеты 601x962
+*/
+@media (max-width:969px) {
+
+	ul.bg_105{
+		text-align: center;
+	}
+	ul.bg_105 > li{
+		display: inline-block;
+		margin: 0.3em;
+	}
+
+}
+/********************************** @media (max-width:969px) /z*/
+
+
+/********************************** @media (max-width:800px)
+планшет 10 дюймов вертикально
+*/
+@media (max-width:800px) {
+
+}
+/********************************** @media (max-width:800px) /z*/
+
+
+/********************************** @media (max-width:700px) */
+@media (max-width:700px) {
+	.webdev_logos{
+		font-size: 0.7em;
+	}
+	.icon-text > div{
+		min-width: 100%;
+		margin: 3vh 0;
+	}
+}
+/********************************** @media (max-width:700px) /z*/
+
+/********************************** @media (max-width:600px)
+планшет 5 дюймов вертикально
+*/
+@media (max-width:600px) {
+
+}
+/********************************** @media (max-width:600px) /z*/
+
+
+/********************************** @media (max-width:360px) */
+@media (max-width:360px) {
+
+	.canvas_bg h1{
+		font: 2em/1em zion, sans-serif;
+	}
+	.webdev_logos{
+		font-size: 0.5em;
+	}
+
+}
+/********************************** @media (max-width:360px) /z*/
+
+/**************************************************** мобильные стили на лендингах /z*/

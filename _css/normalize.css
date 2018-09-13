@@ -1,0 +1,505 @@
+@font-face {
+	font-family: 'Open Sans';
+	font-display: swap;
+	src: local('Open Sans'), local('OpenSans'), url('/_fonts/opensans.woff2') format('woff2'), url('/_fonts/opensans.woff') format('woff'), url('/_fonts/opensans.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'roboto';
+	font-display: swap;
+	src: local('Roboto'), local('roboto'), url('/_fonts/roboto/roboto.woff2') format('woff2'), url('/_fonts/roboto/roboto.woff') format('woff'), url('/_fonts/roboto/roboto.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: icons;
+	font-display: block;
+	src: url('/_fonts/icons.woff2') format('woff2'), url('/_fonts/icons.woff') format('woff'), url('/_fonts/icons.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal
+}
+/* normalize.css v1.0.1 | MIT License | git.io/normalize */
+body *{
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 115%;
+	-webkit-text-size-adjust: 115%;
+	-ms-text-size-adjust: 115%;
+	font-family: sans-serif, icons;
+	/*text-rendering: optimizeLegibility;*/
+}
+
+body {
+	margin: 0;
+	cursor: default;
+	padding: 2.3rem 0 0;
+	font: normal 1rem/1.1 'roboto', arial, sans-serif, icons;
+	color: #333;
+	background: #f7f7f7;
+	overflow-y: scroll;
+	/*overflow-x: hidden;*/
+}
+
+main {
+	background: #f7f7f7;
+	width: 100%;
+	flex: 1 0;
+	padding: 0 0.7rem;
+	order: 2;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0
+}
+
+[hidden] {
+	display: none
+}
+
+a,
+a:visited,
+label {
+	text-decoration: none;
+	outline: 0;
+	cursor: pointer;
+}
+a{
+	display: inline-block;
+	line-height: 1em;
+	color: #3367d6;
+	transition: all 0.2s;
+}
+a:active,
+a:focus {
+	outline: 0
+}
+a:focus{
+}
+a:hover {
+	outline: 0;
+	color: #2f5dc0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6  {
+	margin: 0;
+	text-align: center;
+	font-weight: normal;
+	line-height: 1em;
+}
+
+h1,
+.h1 {
+	font-size: 2.2em;
+	padding: .67em 0
+}
+
+h2,
+.h2 {
+	font-size: 1.5em;
+	padding: 0.5em 0;
+}
+
+h3,
+.h3 {
+	font-size: 1.35em;
+	padding: 0.5em 0;
+}
+
+h4,
+.h4 {
+	font-size: 1.25em;
+	padding: 0.5em 0;
+}
+
+h5,
+.h5 {
+	font-size: 1.3em;
+	padding: .7em 0
+}
+
+h6,
+.h6 {
+	font-size: 1.2em;
+	padding: .8em 0
+}
+
+abbr[title] {
+	border-bottom: 1px dotted
+}
+
+b,
+strong {
+	display: inline-block;
+	font-weight: bold;
+}
+
+blockquote {
+	font: normal 0.9em/1.5 'roboto', 'Open Sans', sans-serif, icons;
+	margin: 1em 0 1em 3%;
+	padding: 0 0 0 1em;
+	border-left: 3px solid #999;
+	color: #555;
+}
+
+dfn {
+	font-style: italic
+}
+
+mark {
+	background: #ff0;
+	color: #000
+}
+
+p,
+pre {
+	margin: 1em 0;
+	padding: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: 'courier new', monospace, serif;
+	_font-family: monospace;
+	font-size: 1em
+}
+
+pre {
+	display: block;
+	background: #202020;
+	color: #eee;
+	font-family: monospace, serif;
+	padding: 0.5em;
+	margin: 1em auto;
+	max-width: 93vw;
+	white-space: pre;
+	/*white-space: pre-wrap;*/
+	/*white-space: nowrap;*/
+	word-wrap: break-word;
+	overflow: auto;
+}
+
+q {
+	quotes: none
+}
+
+q:before,
+q:after {
+	content: '';
+	content: none
+}
+
+small {
+	font-size: 80%
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+
+sup {
+	top: -0.5em
+}
+
+sub {
+	bottom: -0.25em
+}
+
+dl,
+menu,
+ol,
+ul {
+	margin: 0.5em 0
+}
+
+dd {
+	margin: 0 0 0 2%
+}
+
+menu,
+ol,
+ul {
+	padding: 0 0 0 2em
+}
+
+nav ul,
+nav ol,
+#language-mod ul{
+	list-style: none;
+	list-style-image: none;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	display: inline-block;
+	border: 0;
+	-ms-interpolation-mode: bicubic
+}
+
+svg:not(:root) {
+	overflow: hidden
+}
+
+figure {
+	margin: 0;
+	text-align: center;
+}
+figcaption{
+	font-size: 0.75em;
+}
+
+form {
+	margin: 0
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0;
+	padding: .35em .625em .75em
+}
+
+legend {
+	border: 0;
+	padding: 0 0.3em;
+	white-space: normal;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+	-webkit-appearance: button;
+}
+.btn,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font: 1.1em/1em 'roboto', 'Open Sans', sans-serif,icons;
+	margin: 0;
+	padding: 0.5em 1em;
+	cursor: pointer;
+	*overflow: visible;
+	background: #3367d6;
+	color: #f7f7f7;
+	border: none;
+	border-radius: 0;
+	text-transform: uppercase;
+	outline: none;
+	transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:focus,
+button:hover,
+button:focus{
+	background: #2f5dc0;
+	transform: scale(1.1);
+}
+
+.btn:active,
+button:active{
+	box-shadow: 0 0 0.3em, 0 0 0.35em inset;
+}
+
+input,
+select,
+textarea {
+	font: 1.1em/1em 'roboto', 'Open Sans', sans-serif, icons;
+	margin: 0;
+	padding: 0.3em;
+	vertical-align: baseline;
+	outline: none;
+	transition: all 0.3s;
+}
+
+button[disabled],
+input[disabled] {
+	cursor: not-allowed;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+textarea{
+	line-height: 2em;
+	height: 2em;
+	border: none;
+	/*border: 1px solid #c0c0c0;*/
+	background: transparent;
+	color: #333;
+	box-shadow: 0 0 0.3em inset;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+textarea:hover{
+	box-shadow: 0 0 0.2em inset;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus{
+	box-shadow: 0 0 0.2em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+	cursor: pointer;
+	*height: 13px;
+	*width: 13px
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	width: 100%;
+}
+
+label{
+	line-height: 1em;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+select{
+	font-size: 1em;
+	line-height: 2em;
+	height: 2em !important;
+	color: #333;
+	background-color: #c8c8c8;
+	box-shadow: 0 0 0.2em inset;
+	border: 1px solid #000;
+	padding:0 1.25em 0 0.3em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+select,
+.select{
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzOS44MyA3MyIgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTM5LjgzIDM4LjVMMTkuOTEgNzMgMCAzOC41ek0wIDM0LjVMMTkuOTEgMGwxOS45MiAzNC41eiIvPjwvc3ZnPg==");
+	background-repeat: no-repeat;
+	background-position: 99% 50%;
+	background-position-x: calc(100% - 0.25em);
+	background-position-y: center;
+	background-size: 0.75em;
+	cursor: pointer;
+}
+select:focus{
+	box-shadow: 0 0px 0.2em
+}
+select::-ms-expand{
+	display: none; /* hide the default arrow in ie10 and ie11 */
+}
+select>option{
+	font-size: 1em;
+	border-bottom: 1px solid
+}
+option:nth-child(3):after {
+	/*content: " " url(http://i62.tinypic.com/15xvbd5.png);*/
+}
+option:checked{
+	/*background: red*/
+}
+iframe{
+	display: block;
+	border: none;
+	max-width: 100%;
+}
+
+/*
+::placeholder{
+color: #fff !important;
+}
+*/
+
+/************** webkit-based browsers (Chrome, Safari, etc.) Hack only *************************/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+	.touchevents .btn,
+	.touchevents button,
+	.touchevents input[type="button"],
+	.touchevents input[type="reset"],
+	.touchevents input[type="submit"]{
+		font-family: 'Open Sans', sans-serif,icons;
+	}
+
+}
+/************** webkit-based browsers (Chrome, Safari, etc.) Hack only ************************ /z*/
+
+
+/************** Firefox Hack only *************************/
+@-moz-document url-prefix() {
+
+}
+/************** Firefox Hack only ************************ /z*/
